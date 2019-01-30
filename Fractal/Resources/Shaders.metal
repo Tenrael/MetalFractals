@@ -39,9 +39,14 @@ kernel void compute(texture2d<float, access::write> output [[ texture(0) ]],
         it = it + 1;
     }
     
-    float colorComponent = 1 - (it / 64.0f);
+    float r = 0, g = 0, b = 0;
+    float colorComponent = 1 - (it / 1000.0f);
+
+    r = pow(colorComponent, 3);
+    g = pow(colorComponent, 2);
+    b = pow(colorComponent, 1);
     
-    float3 color = float3(colorComponent, colorComponent, colorComponent);
+    float3 color = float3(r, g, b);
     
     output.write(float4(color, 1), gid);
 }
