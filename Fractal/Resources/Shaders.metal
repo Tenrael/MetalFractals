@@ -11,6 +11,8 @@ using namespace metal;
 
 #include "FractalParameters.h"
 
+#define ITERS 200.0f
+
 kernel void compute(texture2d<float, access::write> output [[ texture(0) ]],
                     uint2 gid [[ thread_position_in_grid ]],
                     constant FractalParameters &params [[ buffer(1) ]]) {
@@ -28,23 +30,19 @@ kernel void compute(texture2d<float, access::write> output [[ texture(0) ]],
     float2 z = float2(0, 0);
     float it = 0;
     
-    for (int i = 0; i < 1000; i++) {
+    while (z.x*z.x + z.y*z.y < 4 && it < ITERS) {
         // z * z + c
         z = float2(z.x * z.x - z.y * z.y + c.x,
                    2.0f * z.x * z.y + c.y);
-        
-        if (z.x*z.x + z.y*z.y > 4)
-            break;
         
         it = it + 1;
     }
     
     float r = 0, g = 0, b = 0;
-    float colorComponent = 1 - (it / 1000.0f);
-
-    r = pow(colorComponent, 3);
-    g = pow(colorComponent, 2);
-    b = pow(colorComponent, 1);
+    
+    r = -pow((it / ITERS - 0.5) * 2, 2.0f) + 1;
+    g = r / 3;
+    b = 0;
     
     float3 color = float3(r, g, b);
     
