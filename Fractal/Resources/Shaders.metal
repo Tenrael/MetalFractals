@@ -7,6 +7,7 @@
 //
 
 #include <metal_stdlib>
+#include <metal_math>
 using namespace metal;
 
 #include "FractalParameters.h"
@@ -38,9 +39,11 @@ kernel void compute(texture2d<float, access::write> output [[ texture(0) ]],
         it = it + 1;
     }
     
+    float nsmooth = it + 1 - log(log(z.x * z.x + z.y * z.y)) / log(2.0f);
+    
     float r = 0, g = 0, b = 0;
     
-    r = -pow((it / ITERS - 0.5) * 2, 2.0f) + 1;
+    r = -pow((nsmooth / ITERS - 0.5) * 2, 2.0f) + 1;
     g = r / 3;
     b = 0;
     
