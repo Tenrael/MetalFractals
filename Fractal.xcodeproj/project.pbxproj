@@ -12,10 +12,18 @@
 		AF10A7E921F9FEF300AFB189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF10A7E821F9FEF300AFB189 /* Assets.xcassets */; };
 		AF10A7EC21F9FEF300AFB189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF10A7EA21F9FEF300AFB189 /* Main.storyboard */; };
 		AF10A7F621FA00ED00AFB189 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = AF10A7F521FA00ED00AFB189 /* Shaders.metal */; };
+		AF1734582202D4A1005E4A2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1734572202D4A1005E4A2D /* AppDelegate.swift */; };
+		AF17345A2202D4A1005E4A2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1734592202D4A1005E4A2D /* ViewController.swift */; };
+		AF17345D2202D4A1005E4A2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF17345B2202D4A1005E4A2D /* Main.storyboard */; };
+		AF17345F2202D4A3005E4A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF17345E2202D4A3005E4A2D /* Assets.xcassets */; };
+		AF1734622202D4A3005E4A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1734602202D4A3005E4A2D /* LaunchScreen.storyboard */; };
+		AF1734692202D4E3005E4A2D /* FractalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1734682202D4E3005E4A2D /* FractalRenderer.swift */; };
+		AF17346A2202D4E3005E4A2D /* FractalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1734682202D4E3005E4A2D /* FractalRenderer.swift */; };
+		AF17346B2202D888005E4A2D /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = AF10A7F521FA00ED00AFB189 /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AF10A7E121F9FEF200AFB189 /* Fractal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fractal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF10A7E121F9FEF200AFB189 /* Fractal-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fractal-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF10A7E421F9FEF200AFB189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF10A7E621F9FEF200AFB189 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AF10A7E821F9FEF300AFB189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,10 +32,25 @@
 		AF10A7EE21F9FEF300AFB189 /* Fractal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fractal.entitlements; sourceTree = "<group>"; };
 		AF10A7F521FA00ED00AFB189 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		AF133EC62201D235003D4367 /* FractalParameters.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = FractalParameters.h; sourceTree = "<group>"; };
+		AF1734552202D4A1005E4A2D /* Fractal-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fractal-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF1734572202D4A1005E4A2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF1734592202D4A1005E4A2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF17345C2202D4A1005E4A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF17345E2202D4A3005E4A2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF1734612202D4A3005E4A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF1734632202D4A3005E4A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF1734682202D4E3005E4A2D /* FractalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FractalRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AF10A7DE21F9FEF200AFB189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1734522202D4A1005E4A2D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				AF10A7E321F9FEF200AFB189 /* Fractal */,
+				AF1734672202D4AB005E4A2D /* Fractal-macOS */,
+				AF1734562202D4A1005E4A2D /* Fractal-iOS */,
 				AF10A7E221F9FEF200AFB189 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,7 +73,8 @@
 		AF10A7E221F9FEF200AFB189 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF10A7E121F9FEF200AFB189 /* Fractal.app */,
+				AF10A7E121F9FEF200AFB189 /* Fractal-macOS.app */,
+				AF1734552202D4A1005E4A2D /* Fractal-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,7 +82,37 @@
 		AF10A7E321F9FEF200AFB189 /* Fractal */ = {
 			isa = PBXGroup;
 			children = (
-				AF10A7F421FA00DC00AFB189 /* Resources */,
+				AF10A7F421FA00DC00AFB189 /* Shaders */,
+				AF1734682202D4E3005E4A2D /* FractalRenderer.swift */,
+			);
+			path = Fractal;
+			sourceTree = "<group>";
+		};
+		AF10A7F421FA00DC00AFB189 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				AF133EC62201D235003D4367 /* FractalParameters.h */,
+				AF10A7F521FA00ED00AFB189 /* Shaders.metal */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		AF1734562202D4A1005E4A2D /* Fractal-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AF1734572202D4A1005E4A2D /* AppDelegate.swift */,
+				AF1734592202D4A1005E4A2D /* ViewController.swift */,
+				AF17345B2202D4A1005E4A2D /* Main.storyboard */,
+				AF17345E2202D4A3005E4A2D /* Assets.xcassets */,
+				AF1734602202D4A3005E4A2D /* LaunchScreen.storyboard */,
+				AF1734632202D4A3005E4A2D /* Info.plist */,
+			);
+			path = "Fractal-iOS";
+			sourceTree = "<group>";
+		};
+		AF1734672202D4AB005E4A2D /* Fractal-macOS */ = {
+			isa = PBXGroup;
+			children = (
 				AF10A7E421F9FEF200AFB189 /* AppDelegate.swift */,
 				AF10A7E621F9FEF200AFB189 /* ViewController.swift */,
 				AF10A7E821F9FEF300AFB189 /* Assets.xcassets */,
@@ -64,24 +120,15 @@
 				AF10A7ED21F9FEF300AFB189 /* Info.plist */,
 				AF10A7EE21F9FEF300AFB189 /* Fractal.entitlements */,
 			);
-			path = Fractal;
-			sourceTree = "<group>";
-		};
-		AF10A7F421FA00DC00AFB189 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				AF133EC62201D235003D4367 /* FractalParameters.h */,
-				AF10A7F521FA00ED00AFB189 /* Shaders.metal */,
-			);
-			path = Resources;
+			path = "Fractal-macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AF10A7E021F9FEF200AFB189 /* Fractal */ = {
+		AF10A7E021F9FEF200AFB189 /* Fractal-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF10A7F121F9FEF300AFB189 /* Build configuration list for PBXNativeTarget "Fractal" */;
+			buildConfigurationList = AF10A7F121F9FEF300AFB189 /* Build configuration list for PBXNativeTarget "Fractal-macOS" */;
 			buildPhases = (
 				AF10A7DD21F9FEF200AFB189 /* Sources */,
 				AF10A7DE21F9FEF200AFB189 /* Frameworks */,
@@ -91,9 +138,26 @@
 			);
 			dependencies = (
 			);
-			name = Fractal;
+			name = "Fractal-macOS";
 			productName = Fractal;
-			productReference = AF10A7E121F9FEF200AFB189 /* Fractal.app */;
+			productReference = AF10A7E121F9FEF200AFB189 /* Fractal-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF1734542202D4A1005E4A2D /* Fractal-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF1734642202D4A3005E4A2D /* Build configuration list for PBXNativeTarget "Fractal-iOS" */;
+			buildPhases = (
+				AF1734512202D4A1005E4A2D /* Sources */,
+				AF1734522202D4A1005E4A2D /* Frameworks */,
+				AF1734532202D4A1005E4A2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fractal-iOS";
+			productName = "Fractal-iOS";
+			productReference = AF1734552202D4A1005E4A2D /* Fractal-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,6 +171,9 @@
 				ORGANIZATIONNAME = Fractal;
 				TargetAttributes = {
 					AF10A7E021F9FEF200AFB189 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					AF1734542202D4A1005E4A2D = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -124,7 +191,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AF10A7E021F9FEF200AFB189 /* Fractal */,
+				AF10A7E021F9FEF200AFB189 /* Fractal-macOS */,
+				AF1734542202D4A1005E4A2D /* Fractal-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +207,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF1734532202D4A1005E4A2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF1734622202D4A3005E4A2D /* LaunchScreen.storyboard in Resources */,
+				AF17345F2202D4A3005E4A2D /* Assets.xcassets in Resources */,
+				AF17345D2202D4A1005E4A2D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,9 +224,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1734692202D4E3005E4A2D /* FractalRenderer.swift in Sources */,
 				AF10A7F621FA00ED00AFB189 /* Shaders.metal in Sources */,
 				AF10A7E721F9FEF200AFB189 /* ViewController.swift in Sources */,
 				AF10A7E521F9FEF200AFB189 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF1734512202D4A1005E4A2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF17346B2202D888005E4A2D /* Shaders.metal in Sources */,
+				AF17346A2202D4E3005E4A2D /* FractalRenderer.swift in Sources */,
+				AF17345A2202D4A1005E4A2D /* ViewController.swift in Sources */,
+				AF1734582202D4A1005E4A2D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +251,22 @@
 				AF10A7EB21F9FEF300AFB189 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF17345B2202D4A1005E4A2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF17345C2202D4A1005E4A2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF1734602202D4A3005E4A2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF1734612202D4A3005E4A2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -217,13 +323,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = Fractal/FractalParameters.h;
+				SWIFT_OBJC_BRIDGING_HEADER = Fractal/Shaders/FractalParameters.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -273,12 +380,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OBJC_BRIDGING_HEADER = Fractal/FractalParameters.h;
+				SWIFT_OBJC_BRIDGING_HEADER = Fractal/Shaders/FractalParameters.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -287,18 +395,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Fractal/Fractal.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Fractal-macOS/Fractal.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7DA53NS3Q6;
-				INFOPLIST_FILE = Fractal/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Fractal-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = alexartStudio.Fractal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Fractal/Resources/FractalParameters.h;
+				SWIFT_OBJC_BRIDGING_HEADER = Fractal/Shaders/FractalParameters.h;
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -307,19 +415,64 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Fractal/Fractal.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Fractal-macOS/Fractal.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7DA53NS3Q6;
-				INFOPLIST_FILE = Fractal/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Fractal-macOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = alexartStudio.Fractal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Fractal/Resources/FractalParameters.h;
+				SWIFT_OBJC_BRIDGING_HEADER = Fractal/Shaders/FractalParameters.h;
 				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		AF1734652202D4A3005E4A2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DA53NS3Q6;
+				INFOPLIST_FILE = "Fractal-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alexartStudio.Fractal-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = Fractal/Shaders/FractalParameters.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF1734662202D4A3005E4A2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DA53NS3Q6;
+				INFOPLIST_FILE = "Fractal-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "alexartStudio.Fractal-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = Fractal/Shaders/FractalParameters.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -335,11 +488,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AF10A7F121F9FEF300AFB189 /* Build configuration list for PBXNativeTarget "Fractal" */ = {
+		AF10A7F121F9FEF300AFB189 /* Build configuration list for PBXNativeTarget "Fractal-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF10A7F221F9FEF300AFB189 /* Debug */,
 				AF10A7F321F9FEF300AFB189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF1734642202D4A3005E4A2D /* Build configuration list for PBXNativeTarget "Fractal-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF1734652202D4A3005E4A2D /* Debug */,
+				AF1734662202D4A3005E4A2D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
