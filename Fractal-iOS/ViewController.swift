@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             return
         }
         
-        var distance = CGPoint(x: translation.x, y: translation.y)
+        let distance = CGPoint(x: translation.x, y: translation.y)
         sender.setTranslation(.zero, in: view)
         
         renderer.translate(dx: -Float(distance.x), dy: -Float(distance.y))

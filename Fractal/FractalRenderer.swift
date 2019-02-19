@@ -50,9 +50,10 @@ public class FractalRenderer: NSObject {
     func translate(dx: Float, dy: Float) {
         let width = Float(viewSize.width)
         let height = Float(viewSize.height)
+        let c = min(width, height)
         
-        fractalParameters.startX += Float(dx / width) * (4 / fractalParameters.scale) * 2
-        fractalParameters.startY += Float(dy / height) * (4 / fractalParameters.scale) * 2
+        fractalParameters.startX += Float(dx / c) * (4 / fractalParameters.scale) * 2
+        fractalParameters.startY += Float(dy / c) * (4 / fractalParameters.scale) * 2
     }
     
     func scale(_ scaleFactor: Float) {
